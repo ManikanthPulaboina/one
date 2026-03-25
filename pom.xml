@@ -24,7 +24,18 @@
 		</dependency>
 
 	</dependencies>
-	
+	<repository>
+		<repository>
+  <id>myfeed</id>
+  <url>https://pkgs.dev.azure.com/manikanthpulaboina/project/_packaging/myfeed/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+	</repository>
 	<distributionManagement>
 		 <snapshotRepository>
 		    <id>nexusRepo</id>
@@ -32,9 +43,15 @@
 		 </snapshotRepository>
 		
 		<repository>
-		    <id>nexusRepo</id>
-		    <url>http://54.221.151.192:8081/repository/myrepo/</url>
-		</repository>
+  <id>myfeed</id>
+  <url>https://pkgs.dev.azure.com/manikanthpulaboina/project/_packaging/myfeed/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
   	</distributionManagement>
 	
 	<pluginRepositories>
